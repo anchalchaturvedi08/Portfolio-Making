@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchal - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navItems = [
+                { name: 'Home', href: '#home' },
+                { name: 'About', href: '#about' },
+                { name: 'Projects', href: '#projects' },
+                { name: 'Contact Me', href: '#contact me' }
+            ];
+
+            const head = document.querySelector('head');
+            const navList = document.querySelector('nav .right ul');
+
+            navItems.forEach(item => {
+                // Create link element for head
+                const link = document.createElement('link');
+                link.rel = 'alternate';
+                link.href = item.href;
+                link.title = item.name;
+                head.appendChild(link);
+
+                // Create nav item for navbar
+                const navItem = document.createElement('li');
+                const navLink = document.createElement('a');
+                navLink.href = item.href;
+                navLink.textContent = item.name;
+                navItem.appendChild(navLink);
+                navList.appendChild(navItem);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- headerSection -->
+    <header>
+        <nav>
+            <div class="left">🚀 Anchal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <!-- Navigation links will be injected here -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HomeSection -->
+        <section id="Home">
+            <!-- <h1 class="h1">Home</h1> -->
+            <div class="firstSection">
+                <div class="leftSection">
+                    Hi, My name is <span class="purple">Anchal</span>
+                    <div>and I am a</div>
+                    <span id="element"></span>
+                </div>
+                <div class="rightSection">
+                    <img src="astronaut-sitting-planet-waving-hand.gif" alt="astronaut">
+                </div>
+            </div>
+            <hr class="hr-1">
+        </section>
+
+        <!-- AboutSection -->
+        <section id="About">
+            <div class="secondSection">
+                <div id="about">
+                    <div class="centered-text">
+                        <h3>About</h3>
+                        <h1>Let me introduce myself</h1>
+                    </div>
+                    <div class="about-profile">
+                        <img src="coder.png" width="150" height="auto" alt="coder">
+                    </div>
+                    <div class="about-text">
+                        <p>"Hey there! 👋 I'm <em>Anchal Chaturvedi</em> currently an undergraduate engineering student
+                            pursuing my studies at <strong>JawaharLal Nehru College of Technology</strong> which is
+                            affiliated by <strong>RGPV University</strong>.I am interested in AI, Machine Learning, and
+                            Data Science. However, right now, I am focusing on enhancing the skills I am currently
+                            learning. After that, I will decide what to do in these fields." While
+                            I'm
+                            actively involved in web development, I'm also eager to explore emerging technologies.
+                            Learning
+                            from both my seniors and juniors brings me immense joy as their insights enrich my journey.
+                            My
+                            aim is to excel in this coding adventure and collaborate with fellow developers to learn
+                            something new. Thank you! 🙏"</p>
+                    </div>
+                    <div class="skills">
+                        <h4>
+                            Skills: ->;
+                            HTML, CSS, TailwindCSS, C language, C++, a little bit of JavaScript also in learning phase.
+                            Some
+                            basic knowledge about algorithms, and data structures.
+                        </h4>
+                    </div>
+                </div>
+                <hr class="hr-2">
+            </div>
+        </section>
+
+        <!-- ProjectSection -->
+        <section id="projects">
+            <div class="thirdSection">
+                <div class="container">
+                    <h1>Projects</h1>
+                    <img src="coding.gif" alt="coding">
+                    <h3>Currently Working on my <em>Projects</em> <br>after Completing it I'll Show here also I have
+                        made
+                        some
+                        <br>small project which i have uploaded on my <br><em>github</em> account you can see there.
+                    </h3>
+                    <a href="https://github.com/anchalchaturvedi08" target="_blank">
+                        <i class="fab fa-github"></i> My GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ContactSection -->
+        <section id="contact me">
+            <footer class="footerContainer">
+                <div>
+                    <h3>Contact Me</h3>
+                    <div class="icon-container">
+                        <a href="https://www.linkedin.com/in/%F0%9F%9A%80anchal-chaturvedi-9739a7220/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.reddit.com/user/AlgoZenith_00/"><i class="fa-brands fa-reddit"></i></a>
+                        <a href="https://discord.com/channels/ashi_010"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.youtube.com/@Code..188"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://twitter.com/Ashi0100"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <img src="bear.gif" alt="astro">
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Coding Enthusiasts', 'Learner.'],
+            typeSpeed: 10,
+        });
+    </script>
+</body>
+
+</html>
