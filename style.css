@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #231a35;
+    background-color: #312054;
     font-family: "Poppins", sans-serif;
     color: white;
 }
@@ -48,25 +48,19 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-main .h1 {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 2rem;
-    color: aliceblue;
-}
-
 /* Home Section */
 .firstSection {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 60px 0;
+    margin: 58px 0;
     text-align: center;
 }
 
 .leftSection {
-    font-size: 2rem;
+    font-size: 4rem;
     color: wheat;
+    font-family: cursive;
 }
 
 .purple {
@@ -84,8 +78,8 @@ main .h1 {
 
 /* About Section */
 .secondSection {
-    padding: 60px 20px;
-    background-color: #231a35;
+    padding: 70px 30px;
+    background-color: blueviolet;
     text-align: center;
 }
 
@@ -94,27 +88,27 @@ main .h1 {
 }
 
 .secondSection h1 {
-    font-size: 2rem;
-}
-
-.secondSection h3 {
     font-size: 1.5rem;
 }
 
+.secondSection h3 {
+    font-size: 2rem;
+}
+
 .about-profile img {
-    max-width: 150px;
+    max-width: 170px;
     height: auto;
 }
 
 .about-text, .skills {
-    margin-top: 20px;
+    margin-top: 35px;
     padding: 0 20px;
 }
 
 /* Projects Section */
 .thirdSection {
     padding: 60px 20px;
-    background-color: #231a35;
+    background-color: #312054;
     text-align: center;
 }
 
